@@ -3,7 +3,7 @@ import plotly.express as px
 from dash import Dash, html, dcc, Input, Output
 
 # 讀取 CSV 檔案
-df = pd.read_csv(r'C:\Users\user\Desktop\清大服科\113上學期\PDDS 資料驅動系統開發入門\作業\week 11\realistic_e_commerce_sales_data.csv')
+df = pd.read_csv(r'realistic_e_commerce_sales_data.csv')
 
 # 將 'Order Date' 轉換為日期格式
 df['Order Date'] = pd.to_datetime(df['Order Date'])
